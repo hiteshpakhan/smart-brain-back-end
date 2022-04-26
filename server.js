@@ -26,7 +26,7 @@ app.use(cors())
 app.use(express.json()); // latest version of exressJS now comes with Body-Parser!
 
 app.get('/', (req, res)=> {
-  res.send(database.users);
+  res.send("it is working");
 })
 
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt) })
